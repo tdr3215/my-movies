@@ -9,7 +9,18 @@ class Nav extends Component {
   render() {
     return (
       <div className="navbar bg-light">
-        <Link to="/">home</Link> |<Link to="/action">Action</Link>
+        <ul className="nav">
+          <li className="nav-item">
+            <Link to="/">
+              <a className="nav-link">Home</a>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/action">
+              <a className="nav-link">Action</a>
+            </Link>
+          </li>
+        </ul>
       </div>
     );
   }
